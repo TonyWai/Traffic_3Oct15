@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="androidapp.tonycorp.traffic.DetailActivity"
+    android:background="@drawable/bg12">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnBack">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtDetailTitle"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/h1"
+            android:textColor="@color/text"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:layout_width="@dimen/image_detail_size"
+            android:layout_height="@dimen/image_detail_size"
+            android:id="@+id/imvDetail"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <ScrollView
+            android:layout_width="330dp"
+            android:layout_height="220dp"
+            android:id="@+id/scrollView"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"
+            android:background="#82ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView4"
+                android:textSize="@dimen/body"
+                android:textColor="@color/text" />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/btnBack"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
